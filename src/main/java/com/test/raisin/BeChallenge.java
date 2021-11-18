@@ -23,7 +23,7 @@ import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ConcurrentMap;
 
-public class OkHttpRead {
+public class BeChallenge {
     private final OkHttpClient httpClient = new OkHttpClient();
     private final MediaType JSON = MediaType.get("application/json; charset=utf-8");
     private Gson gson = new Gson();
@@ -31,7 +31,7 @@ public class OkHttpRead {
     private ConcurrentMap<String, String> setB = new ConcurrentHashMap<>();
 
     public static void main(String[] args) {
-        OkHttpRead read = new OkHttpRead();
+        BeChallenge read = new BeChallenge();
         read.getResources();
     }
 
